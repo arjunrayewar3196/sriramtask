@@ -9,3 +9,7 @@ aws ecr get-login-password --region ap-south-1 | docker login --username AWS --p
 create secrte and use secrets and access it will work 
 
 kubectl create secret docker-registry regcred --docker-server=552254951688.dkr.ecr.ap-south-1.amazonaws.com --docker-username=AWS --docker-password=$(aws ecr get-login-password) --namespace=health-check
+
+
+(reverse-i-search)`tain': kubectl taint node ip-172-31-7-80 node-role.kubernetes.io/master:NoSchedule-
+
